@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <!-- NUEVO -->
+    <header>
+        <img src="images/Vector.png" class="logo" alt="Logo Alura">
+    </header>
+    
+    <main>
+        <section class="seccion1">
+            <div class="container">
+                <textarea name="txt_encriptar" class="txt_encriptar" id="txt_encriptar" cols="30" rows="10" placeholder="Ingrese texto"></textarea>
+            </div>
+
+            <div class="alerta">
+                <p>⚠ Solo minusculas, sin acentos, ni caracteres especiales</p>
+            </div>
+
+            <div class="botones">
+                <button  type="button" class="btn_encriptar" onclick="encriptar()">Encriptar</button>
+                <button type="button" class="btn_desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+
+        </section>
+
+        <section class="seccion2">
+
+            <div class="container-img">
+                <img src="images/img1.png" class="img_seccion2" width="100%" height="100%" alt="" id="img">
+            </div>
+
+            <div class="container-parrafo">
+                <h3>Ningun mensaje encontrado</h3>
+                <p>Ingresar el texto que desea encriptar o <br> desencriptar.</p>
+            </div>
+
+            <div class="container-copiar">
+                <button type="button" class="btn_copiar" value="copiar">Copiar</button>
+            </div>
+
+            <div class="container-resultado">
+                <p class="txt-resultado" cols="30" rows="10"></p>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy Copyright M. Cayllahua Arqueño - 2023</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
